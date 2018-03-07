@@ -82,4 +82,33 @@
         "key": "ctrl+k ctrl+p",
         "command": "workbench.action.files.copyPathOfActiveFile"
     },
+
+    // bookmarks
+    {
+        "key": "ctrl+f2",
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f2",
+        "command": "bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+f2",
+        "command": "bookmarks.clear",
+        "when": "editorTextFocus"
+    },
+
+    // projects
+    {
+        "key": "ctrl+alt+p",
+        "command": "projectManager.listProjects"
+    },
+
+    // panels
+    {
+        "key": "ctrl+b ctrl+m",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
 ]
