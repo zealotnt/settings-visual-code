@@ -4,5 +4,8 @@
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
     "editor.minimap.enabled": true,
-    "workbench.sideBar.location": "left"
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.visible": false,
+    "workbench.editor.showTabs": true,
+    "vim.useSystemClipboard": true
 }

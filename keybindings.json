@@ -2,58 +2,10 @@
 [
     {
         "key": "ctrl+tab",
-        "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
+        "command": "workbench.action.nextEditor"
     },
     {
-        "key": "ctrl+shift+tab",
-        "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "cursorHome",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "cursorEnd",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+up",
-        "command": "-editor.action.moveLinesUpAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+up",
-        "command": "cursorPageUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+down",
-        "command": "-editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+down",
-        "command": "cursorPageDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+e",
-        "command": "cursorEndSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+a",
-        "command": "-editor.action.blockComment",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+a",
-        "command": "editor.action.selectAll"
-    },
-    {
-        "key": "ctrl+tab",
+        "key": "alt+k",
         "command": "workbench.action.nextEditor"
     },
     {
@@ -61,26 +13,37 @@
         "command": "workbench.action.previousEditor"
     },
     {
-        "key": "ctrl+d",
-        "command": "editor.action.deleteLines",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "alt+j",
+        "command": "workbench.action.previousEditor"
     },
     {
-        "key": "alt+left",
+        "key": "alt+[",
         "command": "workbench.action.navigateBack"
     },
     {
-        "key": "alt+right",
+        "key": "alt+]",
         "command": "workbench.action.navigateForward"
     },
+
     {
         "key": "alt+enter",
         "command": "editor.action.goToDeclaration",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "ctrl+k ctrl+p",
+        "key": "cmd+ctrl+t",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "cmd+k cmd+p",
         "command": "workbench.action.files.copyPathOfActiveFile"
+    },
+
+    // trailing whitespace
+    {
+        "key": "cmd+shift+r",
+        "command": "trailing-spaces.deleteTrailingSpaces",
+        "when": "editorTextFocus"
     },
 
     // bookmarks
@@ -100,15 +63,66 @@
         "when": "editorTextFocus"
     },
 
+    {
+        "key": "cmd+shift+r",
+        "command": "trailing-spaces.deleteTrailingSpaces",
+        "when": "editorTextFocus"
+    },
+
+    {
+        "key": "shift+h",
+        "command": "extension.vim_home",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+l",
+        "command": "extension.vim_end",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+
     // projects
     {
-        "key": "ctrl+alt+p",
+        "key": "cmd+ctrl+p",
         "command": "projectManager.listProjects"
     },
 
     // panels
     {
         "key": "ctrl+b ctrl+m",
-        "command": "workbench.action.toggleMaximizedPanel"
+        "command": "workbench.action.togglemaximizedpanel"
+    },
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" 
+    },
+    {
+        "key": "cmd+. cmd+.",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "cmd+k cmd+s",
+        "command": "-workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "cmd+k cmd+s",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+, cmd+,",
+        "command": "workbench.action.openSettings"
+    },
+    {
+        "key": "cmd+,",
+        "command": "-workbench.action.openSettings"
     },
 ]
