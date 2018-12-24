@@ -31,6 +31,10 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
+        "key": "ctrl+cmd+w",
+        "command": "-workbench.action.toggleTabsVisibility"
+    },
+    {
         "key": "cmd+ctrl+t",
         "command": "workbench.action.closeOtherEditors"
     },
@@ -69,6 +73,11 @@
         "when": "editorTextFocus"
     },
 
+    {
+        "key": "cmd+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
     {
         "key": "shift+h",
         "command": "extension.vim_home",
@@ -124,5 +133,12 @@
     {
         "key": "cmd+,",
         "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.moveEditorLeftInGroup"
+    },
+        "key": "alt+l",
+        "command": "workbench.action.moveEditorRightInGroup"
     },
 ]
