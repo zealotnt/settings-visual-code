@@ -24,7 +24,6 @@
         "key": "alt+]",
         "command": "workbench.action.navigateForward"
     },
-
     {
         "key": "alt+enter",
         "command": "editor.action.goToDeclaration",
@@ -35,21 +34,19 @@
         "command": "-workbench.action.toggleTabsVisibility"
     },
     {
-        "key": "cmd+ctrl+t",
+        "key": "ctrl+cmd+w",
         "command": "workbench.action.closeOtherEditors"
     },
     {
         "key": "cmd+k cmd+p",
         "command": "workbench.action.files.copyPathOfActiveFile"
     },
-
     // trailing whitespace
     {
         "key": "cmd+shift+r",
         "command": "trailing-spaces.deleteTrailingSpaces",
         "when": "editorTextFocus"
     },
-
     // bookmarks
     {
         "key": "ctrl+f2",
@@ -66,13 +63,27 @@
         "command": "bookmarks.clear",
         "when": "editorTextFocus"
     },
-
     {
         "key": "cmd+shift+r",
         "command": "trailing-spaces.deleteTrailingSpaces",
         "when": "editorTextFocus"
     },
-
+    // {
+    //     "key": "ctrl+w shift+j",
+    //     "command": "workbench.action.moveActiveEditorGroupDown"
+    // },
+    // {
+    //     "key": "ctrl+w shift+h",
+    //     "command": "workbench.action.moveActiveEditorGroupLeft"
+    // },
+    // {
+    //     "key": "ctrl+w shift+l",
+    //     "command": "workbench.action.moveActiveEditorGroupRight"
+    // },
+    // {
+    //     "key": "ctrl+w shift+k",
+    //     "command": "workbench.action.moveActiveEditorGroupUp"
+    // },
     {
         "key": "cmd+d",
         "command": "editor.action.deleteLines",
@@ -88,13 +99,11 @@
         "command": "extension.vim_end",
         "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
     },
-
     // projects
     {
         "key": "cmd+ctrl+p",
         "command": "projectManager.listProjects"
     },
-
     // panels
     {
         "key": "ctrl+b ctrl+m",
@@ -108,7 +117,7 @@
     {
         "key": "r",
         "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" 
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
     {
         "key": "cmd+. cmd+.",
@@ -138,7 +147,25 @@
         "key": "alt+h",
         "command": "workbench.action.moveEditorLeftInGroup"
     },
+    {
+        "key": "cmd+k shift+cmd+left",
+        "command": "-workbench.action.moveEditorLeftInGroup"
+    },
+    {
         "key": "alt+l",
         "command": "workbench.action.moveEditorRightInGroup"
     },
+    {
+        "key": "cmd+k shift+cmd+right",
+        "command": "-workbench.action.moveEditorRightInGroup"
+    },
+    {
+        "key": "cmd+j",
+        "command": "extension.aceJump"
+    },
+    // Windows manipulation
+    {
+        "key": "cmd+t",
+        "commands": "workbench.action.nextEditor"
+    }
 ]

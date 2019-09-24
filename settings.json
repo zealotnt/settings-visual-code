@@ -9,6 +9,18 @@
     "workbench.editor.showTabs": true,
     "vim.useSystemClipboard": true,
     "workbench.iconTheme": "eq-material-theme-icons",
-    "workbench.colorTheme": "Material Theme High Contrast",
-    "window.zoomLevel": 0
+    "workbench.colorTheme": "Monokai",
+    "window.zoomLevel": 0,
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+    "workbench.editor.enablePreview": false,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "cmd+t"
+            ],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        }
+    ]
 }
