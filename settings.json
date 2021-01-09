@@ -1,4 +1,5 @@
 {
+
     "sublimeTextKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
@@ -22,5 +23,11 @@
                 "workbench.action.showCommands",
             ]
         }
-    ]
+    ],
+    "cloudcode.gke": {
+        "projectIds": [
+            "utopian-hearth-260918"
+        ]
+    },
+    "window.zoomLevel": -1
 }
