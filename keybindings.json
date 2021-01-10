@@ -5,15 +5,7 @@
         "command": "workbench.action.nextEditor"
     },
     {
-        "key": "alt+k",
-        "command": "workbench.action.nextEditor"
-    },
-    {
         "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "alt+j",
         "command": "workbench.action.previousEditor"
     },
     {
@@ -37,9 +29,14 @@
         "key": "ctrl+cmd+w",
         "command": "workbench.action.closeOtherEditors"
     },
+    // not work yet, going to migrate to VScapeCode
     {
-        "key": "cmd+k cmd+p",
+        "key": "cmd+; cmd+f p",
         "command": "workbench.action.files.copyPathOfActiveFile"
+    },
+    {
+        "key": "cmd+; cmd+f r",
+        "command": "copyRelativeFilePath"
     },
     // trailing whitespace
     {
@@ -67,27 +64,6 @@
         "key": "cmd+shift+r",
         "command": "trailing-spaces.deleteTrailingSpaces",
         "when": "editorTextFocus"
-    },
-    // {
-    //     "key": "ctrl+w shift+j",
-    //     "command": "workbench.action.moveActiveEditorGroupDown"
-    // },
-    // {
-    //     "key": "ctrl+w shift+h",
-    //     "command": "workbench.action.moveActiveEditorGroupLeft"
-    // },
-    // {
-    //     "key": "ctrl+w shift+l",
-    //     "command": "workbench.action.moveActiveEditorGroupRight"
-    // },
-    // {
-    //     "key": "ctrl+w shift+k",
-    //     "command": "workbench.action.moveActiveEditorGroupUp"
-    // },
-    {
-        "key": "cmd+d",
-        "command": "editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
     },
     {
         "key": "shift+h",
@@ -120,52 +96,69 @@
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
     {
-        "key": "cmd+. cmd+.",
+        "key": "cmd+, k",
         "command": "workbench.action.openGlobalKeybindings"
-    },
-    {
-        "key": "cmd+k cmd+s",
-        "command": "-workbench.action.openGlobalKeybindings"
     },
     {
         "key": "cmd+k cmd+s",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "cmd+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "cmd+, cmd+,",
+        "key": "cmd+, c",
         "command": "workbench.action.openSettings"
     },
     {
-        "key": "cmd+,",
-        "command": "-workbench.action.openSettings"
-    },
-    {
         "key": "alt+h",
-        "command": "workbench.action.moveEditorLeftInGroup"
-    },
-    {
-        "key": "cmd+k shift+cmd+left",
-        "command": "-workbench.action.moveEditorLeftInGroup"
+        "command": "workbench.action.focusLeftGroup"
     },
     {
         "key": "alt+l",
-        "command": "workbench.action.moveEditorRightInGroup"
+        "command": "workbench.action.focusRightGroup"
     },
     {
-        "key": "cmd+k shift+cmd+right",
-        "command": "-workbench.action.moveEditorRightInGroup"
+        "key": "alt+j",
+        "command": "workbench.action.focusBelowGroup"
     },
     {
-        "key": "cmd+j",
-        "command": "extension.aceJump"
+        "key": "alt+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "cmd+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "cmd+v",
+        "command": "editor.action.clipboardPasteAction"
     },
     // Windows manipulation
     {
         "key": "cmd+t",
         "commands": "workbench.action.nextEditor"
+    },
+    // https://superuser.com/questions/1290030/vs-code-how-can-i-move-the-cursor-by-display-line-when-wrapping-in-vs-code
+    {
+        "key": "up",
+        "command": "cursorUp",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "down",
+        "command": "cursorDown",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "k",
+        "command": "cursorUp",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    },
+    {
+        "key": "j",
+        "command": "cursorDown",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
     }
 ]

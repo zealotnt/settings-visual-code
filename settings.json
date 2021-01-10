@@ -6,7 +6,7 @@
     "editor.formatOnPaste": true,
     "editor.minimap.enabled": true,
     "workbench.sideBar.location": "left",
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "workbench.editor.showTabs": true,
     "vim.useSystemClipboard": true,
     "workbench.iconTheme": "eq-material-theme-icons",
@@ -29,5 +29,18 @@
             "utopian-hearth-260918"
         ]
     },
-    "window.zoomLevel": -1
+    "window.zoomLevel": -1,
+    "markdown-preview-enhanced.mermaidTheme": "dark",
+    "markdown-preview-enhanced.previewTheme": "solarized-dark.css",
+    "markdown-preview-enhanced.revealjsTheme": "solarized.css"
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["f", "d"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "window.menuBarVisibility": "default"
+    // End VSpaceCode settings
 }
